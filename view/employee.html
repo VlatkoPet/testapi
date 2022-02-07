@@ -1,0 +1,36 @@
+<h3>Employee</h3>
+<div class="table-responsive">
+	<table class="table table-dark table-striped table-hover">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Image</th>
+				<th>date of birth</th>
+				<th>title</th>
+				<th>firstname</th>
+				<th>lastname</th>
+				<th>email</th>
+				<th>address</th>
+				<th>country</th>
+				<th>bio</th>
+				<th>rating</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="employees in employee">
+				<td>{{employees.id}}</td>
+				<td>{{employees.image}}</td>
+				<td>{{employees.date_of_birth}}</td>
+				<td>{{employees.title}}</td>
+				<td>{{employees.first_name}}</td>
+				<td>{{employees.last_name}}</td>
+				<td>{{employees.email}}</td>
+				<td>{{employees.address}}</td>
+				<td>{{employees.country}}</td>
+				<td>{{employees.bio}}</td>
+				<td>{{employees.rating}}</td>
+				<!--<td><a href="#!/details_employee/{{employee.indexOf(employees)}}" title="ДЕТАЛИ">ДЕТАЛИ</a></td>-->
+			</tr>
+		</tbody>
+	</table>
+	<div class="table-responsive-sm">
